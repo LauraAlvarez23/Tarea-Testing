@@ -35,7 +35,7 @@ describe('generation of hashes test', ()=> {
         expect(match2).toBe(true);
     });
 
-    it('should return false if the hashes get mixed', async() => {
+    it('should return false if the hashes doesnt get mixed', async() => {
         if(!hash1 || !hash2){
             hash1 = await hashPassword(password1);
             hash2 = await hashPassword(password2);
